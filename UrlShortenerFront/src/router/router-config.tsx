@@ -1,7 +1,6 @@
 import { RouterProvider, createBrowserRouter, createRoutesFromElements, Navigate, Route } from "react-router-dom";
 import About from "../components/UI/About";
 import ErrorPage from "../components/UI/ErrorPage";
-import Home from "../components/UI/Home";
 import ProtectedRoutes from "../components/Auth/ProtectedRoute";
 import RootLayout from "../components/UI/RootLayout";
 import UrlsLayout from "../components/UI/UrlsLayout";
@@ -14,7 +13,7 @@ import Login from "../components/Auth/Login/Login";
 const router = createBrowserRouter(
     createRoutesFromElements(
         <Route path='/' element={<RootLayout />} errorElement={<ErrorPage />}>
-            <Route index element={<Home />} />
+            {/* <Route index element={<Home />} /> */}
             <Route index element={<Navigate to='urls' />} />
             <Route path='urls' element={<UrlsLayout />}>
                 <Route index element={<Urls />} />
