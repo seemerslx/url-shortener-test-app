@@ -3,13 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.9.34701.34
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShortenerUrlAPI", "ShortenerUrlAPI\ShortenerUrlAPI.csproj", "{FB7BD3ED-7B60-454A-AFA7-38B70E7AE4B8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ShortenerUrlAPI", "ShortenerUrlAPI\ShortenerUrlAPI.csproj", "{FB7BD3ED-7B60-454A-AFA7-38B70E7AE4B8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UrlShortenerAPI.Models", "UrlShortenerAPI.Models\UrlShortenerAPI.Models.csproj", "{CC868102-44AE-4DA5-8B75-C41435A4B66B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UrlShortenerAPI.Models", "UrlShortenerAPI.Models\UrlShortenerAPI.Models.csproj", "{CC868102-44AE-4DA5-8B75-C41435A4B66B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UrlShortenerApi.Core", "UrlShortenerApi.Core\UrlShortenerApi.Core.csproj", "{D920239E-E9DD-4DF7-838E-69A96DB634FF}"
-EndProject
-Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{24C64E07-6A6F-47A0-947A-60FBC69B3BF1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UrlShortenerApi.Core", "UrlShortenerApi.Core\UrlShortenerApi.Core.csproj", "{D920239E-E9DD-4DF7-838E-69A96DB634FF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -29,10 +27,6 @@ Global
 		{D920239E-E9DD-4DF7-838E-69A96DB634FF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D920239E-E9DD-4DF7-838E-69A96DB634FF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D920239E-E9DD-4DF7-838E-69A96DB634FF}.Release|Any CPU.Build.0 = Release|Any CPU
-		{24C64E07-6A6F-47A0-947A-60FBC69B3BF1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{24C64E07-6A6F-47A0-947A-60FBC69B3BF1}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{24C64E07-6A6F-47A0-947A-60FBC69B3BF1}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{24C64E07-6A6F-47A0-947A-60FBC69B3BF1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -1,13 +1,5 @@
-using Microsoft.AspNetCore.Authentication.JwtBearer;
-using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.IdentityModel.Tokens;
-using Microsoft.OpenApi.Models;
-using System;
-using System.IdentityModel.Tokens.Jwt;
-using System.Text;
 using UrlShortenerApi.Confiuguration;
-using UrlShortenerApi.Core;
 using UrlShortenerApi.Core.Context;
 
 var builder = WebApplication.CreateBuilder(args);
