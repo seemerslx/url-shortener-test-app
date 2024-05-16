@@ -1,0 +1,26 @@
+version: '3.4'
+
+services:
+  urlshortenerdb:
+    container_name: db
+    image: mcr.microsoft.com/mssql/server:2022-latest
+    ports:
+      - 8002:1433
+    environment:
+      - ACCEPT_EULA=Y
+      - MSSQL_SA_PASSWORD=1111
+
+  shortenerurlapi:
+    container_name: sql-shortener
+    image: ${DOCKER_REGISTRY-}shortenerurlapi
+    build:
+      context: .
+      dockerfile: ShortenerUrlAPI/Dockerfile
+    ports:
+      - 8001:80
+    depends_on:
+      - urlshortenerdb
+    environment:
+      - DB_HOST=urlshortenerdb
+      - DB_NAME=UrlDb
+      - DB_MSSQL_SA_PASSWORD=1111

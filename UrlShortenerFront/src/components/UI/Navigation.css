@@ -1,0 +1,37 @@
+.header-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0px;
+  }
+  
+  .header-nav-list-item{
+    cursor: pointer;
+  }
+
+  .logo{
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+  }
+
+  .nav-link .active{
+    text-decoration: underline;
+  }
+  
+  .header-nav-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+  }
+  .nav-link:active,
+  .nav-link:hover,
+  .nav-link:focus{
+    color: gray;
+  }
+  .header-nav-account {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
